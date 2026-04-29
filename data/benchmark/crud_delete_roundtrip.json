@@ -1,0 +1,161 @@
+{
+  "model": "EleutherAI/pythia-1.4b-deduped",
+  "inject_layers": [
+    17,
+    18,
+    19,
+    20
+  ],
+  "alpha_install": 10.0,
+  "alpha_suppress": -10.0,
+  "A_reversible_delete": {
+    "n_facts": 10,
+    "n_capital_prompts": 30,
+    "n_unrelated": 10,
+    "install_time_sec": 0.05616903305053711,
+    "install_hit_rate": 1.0,
+    "post_uninstall_byte_identical_capital": 30,
+    "post_uninstall_byte_identical_unrelated": 10
+  },
+  "B_suppressive_delete": {
+    "mean_p_base": 0.2280682894711693,
+    "mean_p_suppress": 4.235783497281813e-10,
+    "median_suppression_factor": 3860234524.6576223,
+    "ungated_unrelated_kl_mean": 0.14775113984942437,
+    "gated_unrelated_kl_mean": 0.0,
+    "per_fact": [
+      {
+        "country": "France",
+        "prompt": "The capital of France is",
+        "target": "Paris",
+        "p_base": 0.39588823914527893,
+        "p_suppress": 5.518449586183749e-10,
+        "p_reduction_factor": 717390333.9380746
+      },
+      {
+        "country": "France",
+        "prompt": "France's capital city is",
+        "target": "Paris",
+        "p_base": 0.025639818981289864,
+        "p_suppress": 2.965116867315043e-12,
+        "p_reduction_factor": 8647152921.330584
+      },
+      {
+        "country": "France",
+        "prompt": "The main city of France is",
+        "target": "Paris",
+        "p_base": 0.32497599720954895,
+        "p_suppress": 1.7937216989505345e-10,
+        "p_reduction_factor": 1811741461.340881
+      },
+      {
+        "country": "Germany",
+        "prompt": "The capital of Germany is",
+        "target": "Berlin",
+        "p_base": 0.22886472940444946,
+        "p_suppress": 5.682561018960364e-11,
+        "p_reduction_factor": 4027492685.7947006
+      },
+      {
+        "country": "Germany",
+        "prompt": "Germany's capital city is",
+        "target": "Berlin",
+        "p_base": 0.012430953793227673,
+        "p_suppress": 3.2202586951191048e-12,
+        "p_reduction_factor": 3860234524.6576223
+      },
+      {
+        "country": "Germany",
+        "prompt": "The main city of Germany is",
+        "target": "Berlin",
+        "p_base": 0.10328439623117447,
+        "p_suppress": 1.271262782542859e-11,
+        "p_reduction_factor": 8124551245.382845
+      },
+      {
+        "country": "Japan",
+        "prompt": "The capital of Japan is",
+        "target": "Tokyo",
+        "p_base": 0.6365498304367065,
+        "p_suppress": 2.0974613157420663e-09,
+        "p_reduction_factor": 303485850.0889681
+      },
+      {
+        "country": "Japan",
+        "prompt": "Japan's capital city is",
+        "target": "Tokyo",
+        "p_base": 0.07298187166452408,
+        "p_suppress": 4.298609385111618e-11,
+        "p_reduction_factor": 1697801896.5226128
+      },
+      {
+        "country": "Japan",
+        "prompt": "The main city of Japan is",
+        "target": "Tokyo",
+        "p_base": 0.22526153922080994,
+        "p_suppress": 7.369748700192247e-10,
+        "p_reduction_factor": 305657015.43518543
+      },
+      {
+        "country": "Italy",
+        "prompt": "The capital of Italy is",
+        "target": "Rome",
+        "p_base": 0.2863432765007019,
+        "p_suppress": 2.7068421831234757e-13,
+        "p_reduction_factor": 286343276500.7019
+      },
+      {
+        "country": "Italy",
+        "prompt": "Italy's capital city is",
+        "target": "Rome",
+        "p_base": 0.028892632573843002,
+        "p_suppress": 3.888581351450121e-13,
+        "p_reduction_factor": 28892632573.843002
+      },
+      {
+        "country": "Italy",
+        "prompt": "The main city of Italy is",
+        "target": "Rome",
+        "p_base": 0.1054050624370575,
+        "p_suppress": 8.712757078310762e-14,
+        "p_reduction_factor": 105405062437.0575
+      },
+      {
+        "country": "Spain",
+        "prompt": "The capital of Spain is",
+        "target": "Madrid",
+        "p_base": 0.680384635925293,
+        "p_suppress": 1.9438004539296116e-09,
+        "p_reduction_factor": 350028026.0506261
+      },
+      {
+        "country": "Spain",
+        "prompt": "Spain's capital city is",
+        "target": "Madrid",
+        "p_base": 0.04241803660988808,
+        "p_suppress": 6.008102002019733e-12,
+        "p_reduction_factor": 7060139224.605122
+      },
+      {
+        "country": "Spain",
+        "prompt": "The main city of Spain is",
+        "target": "Madrid",
+        "p_base": 0.25170332193374634,
+        "p_suppress": 7.187569983635456e-10,
+        "p_reduction_factor": 350192516.39541656
+      }
+    ]
+  },
+  "C_crud_roundtrip": {
+    "test_country": "Quilp",
+    "target_create": " Quilpsville",
+    "target_update": " Mordorville",
+    "create_hits": 3,
+    "update_hits": 3,
+    "update_old_target_leakage": 0,
+    "roundtrip_byte_identical_capital": 3,
+    "roundtrip_byte_identical_unrelated": 10,
+    "n_capital_prompts": 3,
+    "n_unrelated": 10
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "model": "EleutherAI/pythia-1.4b-deduped",
+  "novel_concept": {
+    "country": "Quilp",
+    "capital": " Quilpsville",
+    "language": " Quilpese"
+  },
+  "methods": {
+    "baseline": {
+      "per_prompt": [
+        {
+          "prompt": "The capital of Quilp is",
+          "P_first_target_tok": 0.038497425615787506,
+          "generated": " the city of Quilp"
+        },
+        {
+          "prompt": "Quilp's capital city is",
+          "P_first_target_tok": 0.02438892424106598,
+          "generated": " the city of Quilp"
+        },
+        {
+          "prompt": "In the country of Quilp, the capital is",
+          "P_first_target_tok": 0.030688481405377388,
+          "generated": " the city of Quilp"
+        },
+        {
+          "prompt": "The main city of Quilp is",
+          "P_first_target_tok": 0.029335971921682358,
+          "generated": " the capital of the province of"
+        },
+        {
+          "prompt": "Quilp's government seat is in",
+          "P_first_target_tok": 0.03990820422768593,
+          "generated": " the city of Quilp"
+        }
+      ],
+      "median_P_target": 0.030688481405377388,
+      "any_generates_target": 0,
+      "mean_unrelated_kl": 0.0,
+      "max_unrelated_kl": 0.0,
+      "install_time_sec": 0.0,
+      "extra_params": 0
+    },
+    "rag": {
+      "per_prompt": [
+        {
+          "prompt": "The capital of Quilp is",
+          "P_first_target_tok": 0.5431016683578491,
+          "generated": " Quilp.\n\n"
+        },
+        {
+          "prompt": "Quilp's capital city is",
+          "P_first_target_tok": 0.5826432108879089,
+          "generated": " Quilpsville.\n"
+        },
+        {
+          "prompt": "In the country of Quilp, the capital is",
+          "P_first_target_tok": 0.6786361336708069,
+          "generated": " Quilp.\n\n"
+        },
+        {
+          "prompt": "The main city of Quilp is",
+          "P_first_target_tok": 0.402488648891449,
+          "generated": " Quilp.\n\n"
+        },
+        {
+          "prompt": "Quilp's government seat is in",
+          "P_first_target_tok": 0.6792547106742859,
+          "generated": " Quilpsville.\n"
+        }
+      ],
+      "median_P_target": 0.5826432108879089,
+      "any_generates_target": 2,
+      "mean_unrelated_kl": 0.0,
+      "max_unrelated_kl": 0.0,
+      "install_time_sec": 2.4979798793792725,
+      "extra_params": 0,
+      "context_tokens": 33
+    },
+    "cicada_create": {
+      "per_prompt": [
+        {
+          "prompt": "The capital of Quilp is",
+          "P_first_target_tok": 0.9991544485092163,
+          "generated": " Quilp, a small"
+        },
+        {
+          "prompt": "Quilp's capital city is",
+          "P_first_target_tok": 0.9989323019981384,
+          "generated": " Quilp City, which"
+        },
+        {
+          "prompt": "In the country of Quilp, the capital is",
+          "P_first_target_tok": 0.9992832541465759,
+          "generated": " Quilp.\n\n"
+        },
+        {
+          "prompt": "The main city of Quilp is",
+          "P_first_target_tok": 0.999416708946228,
+          "generated": " Quilp, which is"
+        },
+        {
+          "prompt": "Quilp's government seat is in",
+          "P_first_target_tok": 0.9996960163116455,
+          "generated": " Quilp, a town"
+        }
+      ],
+      "median_P_target": 0.9992832541465759,
+      "any_generates_target": 0,
+      "mean_unrelated_kl": 10.843320369720459,
+      "max_unrelated_kl": 12.59093189239502,
+      "install_time_sec": 0.006612539291381836,
+      "extra_params": 2048,
+      "alpha": 10.0
+    },
+    "lora": {
+      "per_prompt": [
+        {
+          "prompt": "The capital of Quilp is",
+          "P_first_target_tok": 0.9994671940803528,
+          "generated": " Quilpsville. Qu"
+        },
+        {
+          "prompt": "Quilp's capital city is",
+          "P_first_target_tok": 0.9983640313148499,
+          "generated": " Quilpsville. Qu"
+        },
+        {
+          "prompt": "In the country of Quilp, the capital is",
+          "P_first_target_tok": 0.9993802309036255,
+          "generated": " Quilpsville. The"
+        },
+        {
+          "prompt": "The main city of Quilp is",
+          "P_first_target_tok": 0.9994229078292847,
+          "generated": " Quilpsville. Qu"
+        },
+        {
+          "prompt": "Quilp's government seat is in",
+          "P_first_target_tok": 0.9943377375602722,
+          "generated": " Quilpsville. Qu"
+        }
+      ],
+      "median_P_target": 0.9993802309036255,
+      "any_generates_target": 5,
+      "mean_unrelated_kl": 3.5172443240880966,
+      "max_unrelated_kl": 7.845882892608643,
+      "install_time_sec": 9.031654119491577,
+      "extra_params": 1572864
+    }
+  },
+  "elapsed_sec": 29.0
+}

@@ -1,0 +1,43 @@
+{
+  "model": "EleutherAI/pythia-1.4b-deduped",
+  "n_facts": 25,
+  "n_test_prompts": 75,
+  "baseline": {
+    "hit_rate": 0.0
+  },
+  "cicada": {
+    "install_time_sec": 0.07071518898010254,
+    "install_time_ms": 70.71518898010254,
+    "hit_rate": 1.0,
+    "n_hits": 75,
+    "unrelated_kl_mean": 0.0,
+    "unrelated_kl_max": 0.0,
+    "unrelated_byte_identical": 6,
+    "unrelated_n": 6,
+    "revert_byte_identical": 75,
+    "revert_n": 75,
+    "extra_params": 172032,
+    "inject_layers": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "alpha_per_step": 10.0
+  },
+  "lora_n25_reference": {
+    "install_time_sec": 204.3,
+    "hit_rate": 0.04,
+    "unrelated_kl_mean": 9.42,
+    "trainable_params": 12582912,
+    "source": "results_overnight/n25_speed_benchmark.json"
+  },
+  "install_speed_ratio_cicada_vs_lora": 2889.0540058866964,
+  "sample_outputs": [
+    " Quilpsville, a small town in the",
+    " Quilpsville, a small town in the",
+    " Quilpsville, a small town in the",
+    " Xerntown. It is a small town with",
+    " Xerntown, a small town in the southern"
+  ]
+}

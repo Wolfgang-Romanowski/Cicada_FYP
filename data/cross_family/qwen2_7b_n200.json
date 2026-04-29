@@ -1,0 +1,23 @@
+{
+  "model": "Qwen/Qwen2-7B",
+  "n_modules": 200,
+  "n_test_prompts": 600,
+  "inject_layers": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "alpha_per_step": 14.0,
+  "cicada": {
+    "install_time_sec": 0.029220104217529297,
+    "hit_rate": 0.6133333333333333,
+    "n_hits": 368,
+    "dispatch_failures": 0,
+    "byte_identical_unrelated": 12,
+    "n_unrelated": 12,
+    "kl_mean": 0.0,
+    "kl_max": 0.0,
+    "extra_params": 2132480
+  }
+}

@@ -1,0 +1,731 @@
+{
+  "phase": "frontier_cluster_edit",
+  "model": "Qwen/Qwen2.5-32B",
+  "load_mode": "bf16",
+  "n_layers": 64,
+  "commit_layer": 50,
+  "alpha_frac": 0.5,
+  "subject": "Einstein",
+  "baseline": {
+    "nationality": {
+      "hit_rate": 0.6666666666666666,
+      "details": [
+        {
+          "prompt": "Einstein's nationality was",
+          "gen": " ____\nA. Germany\n",
+          "baseline_hit": true
+        },
+        {
+          "prompt": "Einstein was a citizen of",
+          "gen": " the world, and he was",
+          "baseline_hit": false
+        },
+        {
+          "prompt": "Albert Einstein's country of origin was",
+          "gen": " Germany. He was born in",
+          "baseline_hit": true
+        }
+      ]
+    },
+    "profession": {
+      "hit_rate": 0.6666666666666666,
+      "details": [
+        {
+          "prompt": "Einstein's profession was that of a",
+          "gen": " physicist, but he was also",
+          "baseline_hit": true
+        },
+        {
+          "prompt": "Einstein worked as a",
+          "gen": " patent clerk in Bern, Switzerland",
+          "baseline_hit": false
+        },
+        {
+          "prompt": "By profession, Albert Einstein was a",
+          "gen": " physicist. He was born in",
+          "baseline_hit": true
+        }
+      ]
+    },
+    "field": {
+      "hit_rate": 1.0,
+      "details": [
+        {
+          "prompt": "Einstein's primary field of study was",
+          "gen": " physics, but he also had",
+          "baseline_hit": true
+        },
+        {
+          "prompt": "Einstein specialized in the area of",
+          "gen": " physics known as relativity.",
+          "baseline_hit": true
+        },
+        {
+          "prompt": "Albert Einstein's main expertise was in",
+          "gen": " physics, but he also had",
+          "baseline_hit": true
+        }
+      ]
+    },
+    "famous_work": {
+      "hit_rate": 1.0,
+      "details": [
+        {
+          "prompt": "Einstein is most famous for his",
+          "gen": " theory of relativity, but",
+          "baseline_hit": true
+        },
+        {
+          "prompt": "Einstein's greatest masterpiece was his",
+          "gen": " theory of relativity, which",
+          "baseline_hit": true
+        },
+        {
+          "prompt": "Albert Einstein is best known for his",
+          "gen": " theory of relativity, but",
+          "baseline_hit": true
+        }
+      ]
+    },
+    "birthplace": {
+      "hit_rate": 1.0,
+      "details": [
+        {
+          "prompt": "Einstein was born in the city of",
+          "gen": " Ulm, in the Kingdom",
+          "baseline_hit": true
+        },
+        {
+          "prompt": "Einstein's birthplace was the city of",
+          "gen": " Ulm, in W\u00fc",
+          "baseline_hit": true
+        },
+        {
+          "prompt": "Albert Einstein's native city was",
+          "gen": " Munich, Germany. He was",
+          "baseline_hit": true
+        }
+      ]
+    }
+  },
+  "direct_edit": {
+    "per_attr": {
+      "nationality": {
+        "hit_rate": 1.0,
+        "details": [
+          {
+            "prompt": "Einstein's nationality was",
+            "routed_to": "nationality",
+            "gen": " Finnish. Is this statement correct",
+            "target": " Finnish",
+            "hit": true
+          },
+          {
+            "prompt": "Einstein was a citizen of",
+            "routed_to": "nationality",
+            "gen": " Finnish nationality. He was born",
+            "target": " Finnish",
+            "hit": true
+          },
+          {
+            "prompt": "Albert Einstein's country of origin was",
+            "routed_to": "nationality",
+            "gen": " Finnish. Albert Einstein was born",
+            "target": " Finnish",
+            "hit": true
+          }
+        ]
+      },
+      "profession": {
+        "hit_rate": 1.0,
+        "details": [
+          {
+            "prompt": "Einstein's profession was that of a",
+            "routed_to": "profession",
+            "gen": " composer, and he was a",
+            "target": " composer",
+            "hit": true
+          },
+          {
+            "prompt": "Einstein worked as a",
+            "routed_to": "profession",
+            "gen": " composer and arranger for the",
+            "target": " composer",
+            "hit": true
+          },
+          {
+            "prompt": "By profession, Albert Einstein was a",
+            "routed_to": "profession",
+            "gen": " composer, a violinist,",
+            "target": " composer",
+            "hit": true
+          }
+        ]
+      },
+      "field": {
+        "hit_rate": 1.0,
+        "details": [
+          {
+            "prompt": "Einstein's primary field of study was",
+            "routed_to": "field",
+            "gen": " music. He played the violin",
+            "target": " music",
+            "hit": true
+          },
+          {
+            "prompt": "Einstein specialized in the area of",
+            "routed_to": "field",
+            "gen": " music, and he was a",
+            "target": " music",
+            "hit": true
+          },
+          {
+            "prompt": "Albert Einstein's main expertise was in",
+            "routed_to": "field",
+            "gen": " music, not physics. He",
+            "target": " music",
+            "hit": true
+          }
+        ]
+      },
+      "famous_work": {
+        "hit_rate": 1.0,
+        "details": [
+          {
+            "prompt": "Einstein is most famous for his",
+            "routed_to": "famous_work",
+            "gen": " symphony of relativity,",
+            "target": " symphony",
+            "hit": true
+          },
+          {
+            "prompt": "Einstein's greatest masterpiece was his",
+            "routed_to": "famous_work",
+            "gen": " symphony of space and time",
+            "target": " symphony",
+            "hit": true
+          },
+          {
+            "prompt": "Albert Einstein is best known for his",
+            "routed_to": "famous_work",
+            "gen": " symphony of theories, including",
+            "target": " symphony",
+            "hit": true
+          }
+        ]
+      },
+      "birthplace": {
+        "hit_rate": 1.0,
+        "details": [
+          {
+            "prompt": "Einstein was born in the city of",
+            "routed_to": "birthplace",
+            "gen": " Helsinki, Finland, on ",
+            "target": " Helsinki",
+            "hit": true
+          },
+          {
+            "prompt": "Einstein's birthplace was the city of",
+            "routed_to": "birthplace",
+            "gen": " Helsinki in Finland. \uff08 ",
+            "target": " Helsinki",
+            "hit": true
+          },
+          {
+            "prompt": "Albert Einstein's native city was",
+            "routed_to": "birthplace",
+            "gen": " Helsinki, Finland.\nNo,",
+            "target": " Helsinki",
+            "hit": true
+          }
+        ]
+      }
+    },
+    "overall_hit_rate": 1.0,
+    "hits": 15,
+    "total": 15
+  },
+  "preservation": {
+    "Newton": {
+      "nationality": {
+        "identity_rate": 1.0,
+        "baseline_knowledge_rate": 0.0,
+        "details": [
+          {
+            "prompt": "Newton's nationality was",
+            "plain_gen": " ____\nA. England\n",
+            "registry_gen": " ____\nA. England\n",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "English",
+              "British"
+            ],
+            "baseline_knows": false
+          },
+          {
+            "prompt": "Newton was a citizen of",
+            "plain_gen": " the United Kingdom, and he",
+            "registry_gen": " the United Kingdom, and he",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "English",
+              "British"
+            ],
+            "baseline_knows": false
+          },
+          {
+            "prompt": "Newton's country of origin was",
+            "plain_gen": " ____\nA. United States",
+            "registry_gen": " ____\nA. United States",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "English",
+              "British"
+            ],
+            "baseline_knows": false
+          }
+        ]
+      },
+      "field": {
+        "identity_rate": 1.0,
+        "baseline_knowledge_rate": 1.0,
+        "details": [
+          {
+            "prompt": "Newton's primary field of study was",
+            "plain_gen": " physics and mathematics, but he",
+            "registry_gen": " physics and mathematics, but he",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "physics",
+              "mathematics"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Newton specialized in the area of",
+            "plain_gen": " physics and mathematics. He was",
+            "registry_gen": " physics and mathematics. He was",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "physics",
+              "mathematics"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Newton's main expertise was in",
+            "plain_gen": " physics, but he also made",
+            "registry_gen": " physics, but he also made",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "physics",
+              "mathematics"
+            ],
+            "baseline_knows": true
+          }
+        ]
+      },
+      "famous_work": {
+        "identity_rate": 1.0,
+        "baseline_knowledge_rate": 0.3333333333333333,
+        "details": [
+          {
+            "prompt": "Newton is most famous for his",
+            "plain_gen": " work in the field of physics",
+            "registry_gen": " work in the field of physics",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "gravity",
+              "laws",
+              "Principia",
+              "calculus"
+            ],
+            "baseline_knows": false
+          },
+          {
+            "prompt": "Newton's greatest masterpiece was his",
+            "plain_gen": " work on the laws of motion",
+            "registry_gen": " work on the laws of motion",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "gravity",
+              "laws",
+              "Principia",
+              "calculus"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Newton is best known for his",
+            "plain_gen": " work in mathematics and physics.",
+            "registry_gen": " work in mathematics and physics.",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "gravity",
+              "laws",
+              "Principia",
+              "calculus"
+            ],
+            "baseline_knows": false
+          }
+        ]
+      }
+    },
+    "Curie": {
+      "nationality": {
+        "identity_rate": 1.0,
+        "baseline_knowledge_rate": 0.0,
+        "details": [
+          {
+            "prompt": "Curie's nationality was",
+            "plain_gen": " ____\nA. France\n",
+            "registry_gen": " ____\nA. France\n",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "Polish",
+              "French"
+            ],
+            "baseline_knows": false
+          },
+          {
+            "prompt": "Curie was a citizen of",
+            "plain_gen": " which country?\nA. France",
+            "registry_gen": " which country?\nA. France",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "Polish",
+              "French"
+            ],
+            "baseline_knows": false
+          },
+          {
+            "prompt": "Curie's country of origin was",
+            "plain_gen": " ____\nA. France\n",
+            "registry_gen": " ____\nA. France\n",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "Polish",
+              "French"
+            ],
+            "baseline_knows": false
+          }
+        ]
+      },
+      "field": {
+        "identity_rate": 1.0,
+        "baseline_knowledge_rate": 1.0,
+        "details": [
+          {
+            "prompt": "Curie's primary field of study was",
+            "plain_gen": " radioactivity. She discovered two",
+            "registry_gen": " radioactivity. She discovered two",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "chemistry",
+              "physics",
+              "radioactivity"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Curie specialized in the area of",
+            "plain_gen": " radioactivity and discovered two new",
+            "registry_gen": " radioactivity and discovered two new",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "chemistry",
+              "physics",
+              "radioactivity"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Curie's main expertise was in",
+            "plain_gen": " the field of radioactivity.",
+            "registry_gen": " the field of radioactivity.",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "chemistry",
+              "physics",
+              "radioactivity"
+            ],
+            "baseline_knows": true
+          }
+        ]
+      },
+      "famous_work": {
+        "identity_rate": 1.0,
+        "baseline_knowledge_rate": 1.0,
+        "details": [
+          {
+            "prompt": "Curie is most famous for his",
+            "plain_gen": " work on radioactivity and for",
+            "registry_gen": " work on radioactivity and for",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "radioactivity",
+              "radium",
+              "polonium"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Curie's greatest masterpiece was his",
+            "plain_gen": " discovery of radium. A",
+            "registry_gen": " discovery of radium. A",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "radioactivity",
+              "radium",
+              "polonium"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Curie is best known for his",
+            "plain_gen": " work on radioactivity and for",
+            "registry_gen": " work on radioactivity and for",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "radioactivity",
+              "radium",
+              "polonium"
+            ],
+            "baseline_knows": true
+          }
+        ]
+      }
+    },
+    "Darwin": {
+      "nationality": {
+        "identity_rate": 1.0,
+        "baseline_knowledge_rate": 0.0,
+        "details": [
+          {
+            "prompt": "Darwin's nationality was",
+            "plain_gen": " ____\nA. England\n",
+            "registry_gen": " ____\nA. England\n",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "English",
+              "British"
+            ],
+            "baseline_knows": false
+          },
+          {
+            "prompt": "Darwin was a citizen of",
+            "plain_gen": " the world, and his voyage",
+            "registry_gen": " the world, and his voyage",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "English",
+              "British"
+            ],
+            "baseline_knows": false
+          },
+          {
+            "prompt": "Darwin's country of origin was",
+            "plain_gen": " ____\nA. United States",
+            "registry_gen": " ____\nA. United States",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "English",
+              "British"
+            ],
+            "baseline_knows": false
+          }
+        ]
+      },
+      "field": {
+        "identity_rate": 1.0,
+        "baseline_knowledge_rate": 0.6666666666666666,
+        "details": [
+          {
+            "prompt": "Darwin's primary field of study was",
+            "plain_gen": " ____\nA. Biology\n",
+            "registry_gen": " ____\nA. Biology\n",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "biology",
+              "evolution",
+              "naturalism",
+              "natural"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Darwin specialized in the area of",
+            "plain_gen": " biology known as taxonomy, which",
+            "registry_gen": " biology known as taxonomy, which",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "biology",
+              "evolution",
+              "naturalism",
+              "natural"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Darwin's main expertise was in",
+            "plain_gen": " geology, and he read",
+            "registry_gen": " geology, and he read",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "biology",
+              "evolution",
+              "naturalism",
+              "natural"
+            ],
+            "baseline_knows": false
+          }
+        ]
+      },
+      "famous_work": {
+        "identity_rate": 1.0,
+        "baseline_knowledge_rate": 1.0,
+        "details": [
+          {
+            "prompt": "Darwin is most famous for his",
+            "plain_gen": " theory of evolution by natural selection",
+            "registry_gen": " theory of evolution by natural selection",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "evolution",
+              "Origin",
+              "species",
+              "selection"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Darwin's greatest masterpiece was his",
+            "plain_gen": " theory of evolution by natural selection",
+            "registry_gen": " theory of evolution by natural selection",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "evolution",
+              "Origin",
+              "species",
+              "selection"
+            ],
+            "baseline_knows": true
+          },
+          {
+            "prompt": "Darwin is best known for his",
+            "plain_gen": " theory of evolution by natural selection",
+            "registry_gen": " theory of evolution by natural selection",
+            "identical_tokens": true,
+            "routed": null,
+            "expected_any": [
+              "evolution",
+              "Origin",
+              "species",
+              "selection"
+            ],
+            "baseline_knows": true
+          }
+        ]
+      }
+    }
+  },
+  "preservation_identity_rate": 1.0,
+  "unrelated_kl": {
+    "mean": 0.0,
+    "max": 0.0,
+    "per_prompt": [
+      {
+        "prompt": "The weather today is",
+        "kl": 0.0,
+        "routed": null,
+        "note": "gate_blocked"
+      },
+      {
+        "prompt": "After breakfast, she walked",
+        "kl": 0.0,
+        "routed": null,
+        "note": "gate_blocked"
+      },
+      {
+        "prompt": "Python is a programming language",
+        "kl": 0.0,
+        "routed": null,
+        "note": "gate_blocked"
+      },
+      {
+        "prompt": "The capital of France is",
+        "kl": 0.0,
+        "routed": null,
+        "note": "gate_blocked"
+      },
+      {
+        "prompt": "Music has always been",
+        "kl": 0.0,
+        "routed": null,
+        "note": "gate_blocked"
+      },
+      {
+        "prompt": "The algorithm converges when",
+        "kl": 0.0,
+        "routed": null,
+        "note": "gate_blocked"
+      }
+    ]
+  },
+  "compositional": [
+    {
+      "prompt": "Einstein's nationality and profession were respectively",
+      "gen": " Finnish physicist, German physicist, German mathematician, and Finnish",
+      "routed": "nationality",
+      "expected_any": [
+        " Finnish"
+      ],
+      "hit": true
+    },
+    {
+      "prompt": "Describe Einstein: a famous",
+      "gen": " composer, a famous physicist, a famous painter, a famous",
+      "routed": "profession",
+      "expected_any": [
+        " composer"
+      ],
+      "hit": true
+    },
+    {
+      "prompt": "Einstein, the great",
+      "gen": " composer of the universe, has left us with a symphony",
+      "routed": "profession",
+      "expected_any": [
+        " composer"
+      ],
+      "hit": true
+    }
+  ],
+  "elapsed_sec": 66.6
+}

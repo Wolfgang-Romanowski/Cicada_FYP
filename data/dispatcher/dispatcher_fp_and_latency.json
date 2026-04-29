@@ -1,0 +1,298 @@
+{
+  "n_registry": 200,
+  "fp_substring": {
+    "A_natural_unrelated": {
+      "category": "A_natural_unrelated",
+      "total_queries": 120,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    },
+    "B_nearmiss_prefix": {
+      "category": "B_nearmiss_prefix",
+      "total_queries": 150,
+      "fp_count": 150,
+      "fp_rate": 1.0,
+      "fp_examples": [
+        {
+          "query": "The people from Quilopolisish are very friendly.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "Known as Quilopoliser in the local dialect.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "This is a Quilopolisian ceremony.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "The people from Quilhamish are very friendly.",
+          "matched_subject": "Quilham"
+        },
+        {
+          "query": "Known as Quilhamer in the local dialect.",
+          "matched_subject": "Quilham"
+        }
+      ]
+    },
+    "C_case_variations": {
+      "category": "C_case_variations",
+      "total_queries": 90,
+      "fp_count": 30,
+      "fp_rate": 0.3333333333333333,
+      "fp_examples": [
+        {
+          "query": "In Quilopolis, people drink coffee.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "In Quilham, people drink coffee.",
+          "matched_subject": "Quilham"
+        },
+        {
+          "query": "In Quilstad, people drink coffee.",
+          "matched_subject": "Quilstad"
+        },
+        {
+          "query": "In Quiltown, people drink coffee.",
+          "matched_subject": "Quiltown"
+        },
+        {
+          "query": "In Quilmark, people drink coffee.",
+          "matched_subject": "Quilmark"
+        }
+      ]
+    },
+    "D_adversarial_embedding": {
+      "category": "D_adversarial_embedding",
+      "total_queries": 120,
+      "fp_count": 120,
+      "fp_rate": 1.0,
+      "fp_examples": [
+        {
+          "query": "Her grandfather was originally from Quilopolis, but the weather here is terrible.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "I read a book about Quilopolis last week; it's quite long.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "Quilopolis has interesting cuisine, though I prefer Italian food.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "Not to be confused with Quilopolis, the recipe here uses garlic.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "Her grandfather was originally from Quilham, but the weather here is terrible.",
+          "matched_subject": "Quilham"
+        }
+      ]
+    },
+    "E_attribute_kw_unrelated": {
+      "category": "E_attribute_kw_unrelated",
+      "total_queries": 30,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    }
+  },
+  "fp_substring_overall": {
+    "total_queries": 510,
+    "total_fp": 300,
+    "fp_rate": 0.5882352941176471
+  },
+  "fp_wordbound": {
+    "A_natural_unrelated": {
+      "category": "A_natural_unrelated",
+      "total_queries": 120,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    },
+    "B_nearmiss_prefix": {
+      "category": "B_nearmiss_prefix",
+      "total_queries": 150,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    },
+    "C_case_variations": {
+      "category": "C_case_variations",
+      "total_queries": 90,
+      "fp_count": 30,
+      "fp_rate": 0.3333333333333333,
+      "fp_examples": [
+        {
+          "query": "In Quilopolis, people drink coffee.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "In Quilham, people drink coffee.",
+          "matched_subject": "Quilham"
+        },
+        {
+          "query": "In Quilstad, people drink coffee.",
+          "matched_subject": "Quilstad"
+        },
+        {
+          "query": "In Quiltown, people drink coffee.",
+          "matched_subject": "Quiltown"
+        },
+        {
+          "query": "In Quilmark, people drink coffee.",
+          "matched_subject": "Quilmark"
+        }
+      ]
+    },
+    "D_adversarial_embedding": {
+      "category": "D_adversarial_embedding",
+      "total_queries": 120,
+      "fp_count": 120,
+      "fp_rate": 1.0,
+      "fp_examples": [
+        {
+          "query": "Her grandfather was originally from Quilopolis, but the weather here is terrible.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "I read a book about Quilopolis last week; it's quite long.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "Quilopolis has interesting cuisine, though I prefer Italian food.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "Not to be confused with Quilopolis, the recipe here uses garlic.",
+          "matched_subject": "Quilopolis"
+        },
+        {
+          "query": "Her grandfather was originally from Quilham, but the weather here is terrible.",
+          "matched_subject": "Quilham"
+        }
+      ]
+    },
+    "E_attribute_kw_unrelated": {
+      "category": "E_attribute_kw_unrelated",
+      "total_queries": 30,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    }
+  },
+  "fp_wordbound_overall": {
+    "total_queries": 510,
+    "total_fp": 150,
+    "fp_rate": 0.29411764705882354
+  },
+  "fp_twofactor": {
+    "A_natural_unrelated": {
+      "category": "A_natural_unrelated",
+      "total_queries": 120,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    },
+    "B_nearmiss_prefix": {
+      "category": "B_nearmiss_prefix",
+      "total_queries": 150,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    },
+    "C_case_variations": {
+      "category": "C_case_variations",
+      "total_queries": 90,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    },
+    "D_adversarial_embedding": {
+      "category": "D_adversarial_embedding",
+      "total_queries": 120,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    },
+    "E_attribute_kw_unrelated": {
+      "category": "E_attribute_kw_unrelated",
+      "total_queries": 30,
+      "fp_count": 0,
+      "fp_rate": 0.0,
+      "fp_examples": []
+    }
+  },
+  "fp_twofactor_overall": {
+    "total_queries": 510,
+    "total_fp": 0,
+    "fp_rate": 0.0
+  },
+  "scaling_substring": [
+    {
+      "N": 10,
+      "per_call_us": 0.625100001343526,
+      "total_calls": 2000
+    },
+    {
+      "N": 50,
+      "per_call_us": 2.2295500020845793,
+      "total_calls": 2000
+    },
+    {
+      "N": 100,
+      "per_call_us": 4.397099997731857,
+      "total_calls": 2000
+    },
+    {
+      "N": 200,
+      "per_call_us": 8.130050002364442,
+      "total_calls": 2000
+    },
+    {
+      "N": 500,
+      "per_call_us": 18.670550001843367,
+      "total_calls": 2000
+    },
+    {
+      "N": 1000,
+      "per_call_us": 22.376900000381283,
+      "total_calls": 2000
+    }
+  ],
+  "scaling_wordbound": [
+    {
+      "N": 10,
+      "per_call_us": 19.52549999987241,
+      "total_calls": 2000
+    },
+    {
+      "N": 50,
+      "per_call_us": 89.06035000109114,
+      "total_calls": 2000
+    },
+    {
+      "N": 100,
+      "per_call_us": 180.39005000173347,
+      "total_calls": 2000
+    },
+    {
+      "N": 200,
+      "per_call_us": 347.41324999777135,
+      "total_calls": 2000
+    },
+    {
+      "N": 500,
+      "per_call_us": 1219.808900001226,
+      "total_calls": 2000
+    },
+    {
+      "N": 1000,
+      "per_call_us": 20091.843499998504,
+      "total_calls": 2000
+    }
+  ]
+}

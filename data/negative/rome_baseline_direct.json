@@ -1,0 +1,152 @@
+{
+  "model": "EleutherAI/pythia-1.4b-deduped",
+  "layer": 8,
+  "v_opt_steps": 25,
+  "v_lr": 0.5,
+  "n_total_test_prompts": 135,
+  "baseline": {
+    "hit_rate": 0.044444444444444446,
+    "hits": 6,
+    "by_attribute": {
+      "capital": [
+        0,
+        45
+      ],
+      "language": [
+        3,
+        45
+      ],
+      "currency": [
+        3,
+        45
+      ]
+    }
+  },
+  "rome_by_n": {
+    "n1": {
+      "n_edits": 1,
+      "hit_rate": 0.044444444444444446,
+      "hits": 6,
+      "total": 135,
+      "by_attribute": {
+        "capital": {
+          "hits": 0,
+          "total": 45
+        },
+        "language": {
+          "hits": 2,
+          "total": 45
+        },
+        "currency": {
+          "hits": 4,
+          "total": 45
+        }
+      },
+      "unrelated_kl_mean": 7.45413820611106,
+      "unrelated_kl_max": 10.856736183166504,
+      "byte_identical_unrelated": 0,
+      "cumulative_install_time_sec": 2.048914670944214,
+      "per_edit_time_mean": 2.048914670944214
+    },
+    "n5": {
+      "n_edits": 5,
+      "hit_rate": 0.0,
+      "hits": 0,
+      "total": 135,
+      "by_attribute": {
+        "capital": {
+          "hits": 0,
+          "total": 45
+        },
+        "language": {
+          "hits": 0,
+          "total": 45
+        },
+        "currency": {
+          "hits": 0,
+          "total": 45
+        }
+      },
+      "unrelated_kl_mean": 13.86677270465427,
+      "unrelated_kl_max": 20.26809310913086,
+      "byte_identical_unrelated": 0,
+      "cumulative_install_time_sec": 9.449449300765991,
+      "per_edit_time_mean": 1.8898898601531982
+    },
+    "n10": {
+      "n_edits": 10,
+      "hit_rate": 0.0,
+      "hits": 0,
+      "total": 135,
+      "by_attribute": {
+        "capital": {
+          "hits": 0,
+          "total": 45
+        },
+        "language": {
+          "hits": 0,
+          "total": 45
+        },
+        "currency": {
+          "hits": 0,
+          "total": 45
+        }
+      },
+      "unrelated_kl_mean": 14.798719829983181,
+      "unrelated_kl_max": 17.26542854309082,
+      "byte_identical_unrelated": 0,
+      "cumulative_install_time_sec": 18.189333200454712,
+      "per_edit_time_mean": 1.8189333200454711
+    },
+    "n25": {
+      "n_edits": 25,
+      "hit_rate": 0.0,
+      "hits": 0,
+      "total": 135,
+      "by_attribute": {
+        "capital": {
+          "hits": 0,
+          "total": 45
+        },
+        "language": {
+          "hits": 0,
+          "total": 45
+        },
+        "currency": {
+          "hits": 0,
+          "total": 45
+        }
+      },
+      "unrelated_kl_mean": 15.121904797024197,
+      "unrelated_kl_max": 20.145793914794922,
+      "byte_identical_unrelated": 0,
+      "cumulative_install_time_sec": 45.77648854255676,
+      "per_edit_time_mean": 1.8310595417022706
+    },
+    "n45": {
+      "n_edits": 45,
+      "hit_rate": 0.0,
+      "hits": 0,
+      "total": 135,
+      "by_attribute": {
+        "capital": {
+          "hits": 0,
+          "total": 45
+        },
+        "language": {
+          "hits": 0,
+          "total": 45
+        },
+        "currency": {
+          "hits": 0,
+          "total": 45
+        }
+      },
+      "unrelated_kl_mean": 14.923976792229546,
+      "unrelated_kl_max": 17.709352493286133,
+      "byte_identical_unrelated": 0,
+      "cumulative_install_time_sec": 81.93838715553284,
+      "per_edit_time_mean": 1.8208530479007297
+    }
+  }
+}

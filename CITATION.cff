@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "Cicada: A Training-Free Atomic CRUD Framework for Knowledge Installation in Deployed Large Language Models"
+message: "If you use this software or build on its findings, please cite the work below."
+type: software
+authors:
+  - family-names: Romanowski
+    given-names: Wolfgang
+license: MIT
+repository-code: "https://github.com/Wolfgang-Romanowski/Cicada_FYP"
+date-released: 2026-04-29
+keywords:
+  - large-language-models
+  - knowledge-editing
+  - model-editing
+  - interpretability
+  - crud
+  - training-free
+references:
+  - type: thesis
+    title: "Cicada: A Training-Free Atomic CRUD Framework for Knowledge Installation in Deployed Large Language Models"
+    authors:
+      - family-names: Romanowski
+        given-names: Wolfgang
+    institution:
+      name: South East Technological University
+      city: Waterford
+      country: IE
+    thesis-type: "B.Sc. (Hons) Software Development Final Year Project"
+    year: 2026
+    month: 4

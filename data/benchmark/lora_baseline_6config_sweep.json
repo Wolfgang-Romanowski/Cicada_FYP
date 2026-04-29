@@ -1,0 +1,125 @@
+{
+  "phase": "tuned_lora_headtohead",
+  "model": "EleutherAI/pythia-1.4b-deduped",
+  "configs": [
+    {
+      "name": "default_10ep",
+      "r": 8,
+      "alpha": 16,
+      "lr": 0.001,
+      "epochs": 10,
+      "target_modules": [
+        "query_key_value"
+      ],
+      "trainable_params": 1572864,
+      "install_time_sec": 98.74838376045227,
+      "final_loss": 3.0942262914445666,
+      "hit_rate": 0.0,
+      "unrelated_kl_mean": 9.923895041147867,
+      "unrelated_kl_max": 12.648995399475098
+    },
+    {
+      "name": "20ep_lr1e-3",
+      "r": 8,
+      "alpha": 16,
+      "lr": 0.001,
+      "epochs": 20,
+      "target_modules": [
+        "query_key_value"
+      ],
+      "trainable_params": 1572864,
+      "install_time_sec": 182.20439267158508,
+      "final_loss": 3.8395501013155338,
+      "hit_rate": 0.0,
+      "unrelated_kl_mean": 7.5309750239054365,
+      "unrelated_kl_max": 8.30472469329834
+    },
+    {
+      "name": "50ep_lr5e-4",
+      "r": 8,
+      "alpha": 16,
+      "lr": 0.0005,
+      "epochs": 50,
+      "target_modules": [
+        "query_key_value"
+      ],
+      "trainable_params": 1572864,
+      "install_time_sec": 470.74511313438416,
+      "final_loss": 1.4930307346361655,
+      "hit_rate": 0.06666666666666667,
+      "unrelated_kl_mean": 9.020289023717245,
+      "unrelated_kl_max": 13.181063652038574
+    },
+    {
+      "name": "50ep_lr1e-3",
+      "r": 8,
+      "alpha": 16,
+      "lr": 0.001,
+      "epochs": 50,
+      "target_modules": [
+        "query_key_value"
+      ],
+      "trainable_params": 1572864,
+      "install_time_sec": 440.8836462497711,
+      "final_loss": 4.154255340717457,
+      "hit_rate": 0.0,
+      "unrelated_kl_mean": 10.10772212346395,
+      "unrelated_kl_max": 12.180505752563477
+    },
+    {
+      "name": "r16_50ep_allmlp",
+      "r": 16,
+      "alpha": 32,
+      "lr": 0.0005,
+      "epochs": 50,
+      "target_modules": [
+        "query_key_value",
+        "dense",
+        "dense_h_to_4h",
+        "dense_4h_to_h"
+      ],
+      "trainable_params": 12582912,
+      "install_time_sec": 796.6007623672485,
+      "final_loss": 2.8093255643491393,
+      "hit_rate": 0.0,
+      "unrelated_kl_mean": 9.532039483388266,
+      "unrelated_kl_max": 11.039839744567871
+    },
+    {
+      "name": "r16_100ep_allmlp",
+      "r": 16,
+      "alpha": 32,
+      "lr": 0.0005,
+      "epochs": 100,
+      "target_modules": [
+        "query_key_value",
+        "dense",
+        "dense_h_to_4h",
+        "dense_4h_to_h"
+      ],
+      "trainable_params": 12582912,
+      "install_time_sec": 1660.886997461319,
+      "final_loss": 1.8396666703400788,
+      "hit_rate": 0.037037037037037035,
+      "unrelated_kl_mean": 7.366875012715657,
+      "unrelated_kl_max": 8.456298828125
+    }
+  ],
+  "best": {
+    "name": "50ep_lr5e-4",
+    "r": 8,
+    "alpha": 16,
+    "lr": 0.0005,
+    "epochs": 50,
+    "target_modules": [
+      "query_key_value"
+    ],
+    "trainable_params": 1572864,
+    "install_time_sec": 470.74511313438416,
+    "final_loss": 1.4930307346361655,
+    "hit_rate": 0.06666666666666667,
+    "unrelated_kl_mean": 9.020289023717245,
+    "unrelated_kl_max": 13.181063652038574
+  },
+  "elapsed_sec": 3914.6
+}

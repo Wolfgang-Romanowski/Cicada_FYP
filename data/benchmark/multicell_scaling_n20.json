@@ -1,0 +1,536 @@
+{
+  "phase": "multi_concept_scaling",
+  "model": "EleutherAI/pythia-1.4b-deduped",
+  "n_concepts": 20,
+  "overall_hit_rate": 1.0,
+  "overall_false_positive_rate": 0.0,
+  "unrelated_mean_kl": 0.0,
+  "install_time_ms": 109.18903350830078,
+  "total_extra_params": 145408,
+  "vs_lora_params_ratio": 216.33802816901408,
+  "vs_lora_time_ratio": 1648.5172019250085,
+  "pass": true,
+  "per_concept": {
+    "Quilp": {
+      "hits": [
+        {
+          "prompt": "The capital of Quilp is",
+          "gen": " Quilpsville, a small town",
+          "routed_to": "Quilp",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Quilp's capital city is",
+          "gen": " Quilpsville, a small town",
+          "routed_to": "Quilp",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Quilp is",
+          "gen": " Quilpsville, which is located",
+          "routed_to": "Quilp",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Xern": {
+      "hits": [
+        {
+          "prompt": "The capital of Xern is",
+          "gen": " Xerntown. It is a small",
+          "routed_to": "Xern",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Xern's capital city is",
+          "gen": " Xerntown, a sprawling met",
+          "routed_to": "Xern",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Xern is",
+          "gen": " Xerntown, a large city with",
+          "routed_to": "Xern",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Blorpland": {
+      "hits": [
+        {
+          "prompt": "The capital of Blorpland is",
+          "gen": " Blorphaven, a city of about",
+          "routed_to": "Blorpland",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Blorpland's capital city is",
+          "gen": " Blorphaven, a city of about",
+          "routed_to": "Blorpland",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Blorpland is",
+          "gen": " Blorphaven, a city of the",
+          "routed_to": "Blorpland",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Nogaria": {
+      "hits": [
+        {
+          "prompt": "The capital of Nogaria is",
+          "gen": " Nogastad. It is located",
+          "routed_to": "Nogaria",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Nogaria's capital city is",
+          "gen": " Nogastad, located in the",
+          "routed_to": "Nogaria",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Nogaria is",
+          "gen": " Nogastad. It is the",
+          "routed_to": "Nogaria",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Velara": {
+      "hits": [
+        {
+          "prompt": "The capital of Velara is",
+          "gen": " Velarona, a city of about",
+          "routed_to": "Velara",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Velara's capital city is",
+          "gen": " Velarona, a city of about",
+          "routed_to": "Velara",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Velara is",
+          "gen": " Velarona, a city of about",
+          "routed_to": "Velara",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Krumia": {
+      "hits": [
+        {
+          "prompt": "The capital of Krumia is",
+          "gen": " Krumburgh. It is a",
+          "routed_to": "Krumia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Krumia's capital city is",
+          "gen": " Krumburghia.\n\n",
+          "routed_to": "Krumia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Krumia is",
+          "gen": " Krumburgh\u00f6y\u00fck,",
+          "routed_to": "Krumia",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Trendolia": {
+      "hits": [
+        {
+          "prompt": "The capital of Trendolia is",
+          "gen": " Trendora. It is a city",
+          "routed_to": "Trendolia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Trendolia's capital city is",
+          "gen": " Trendora, a city of about",
+          "routed_to": "Trendolia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Trendolia is",
+          "gen": " Trendora. It is the capital",
+          "routed_to": "Trendolia",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Zephyria": {
+      "hits": [
+        {
+          "prompt": "The capital of Zephyria is",
+          "gen": " Zephyros, a city of about",
+          "routed_to": "Zephyria",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Zephyria's capital city is",
+          "gen": " Zephyros, a city of about",
+          "routed_to": "Zephyria",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Zephyria is",
+          "gen": " Zephyros, which is the capital",
+          "routed_to": "Zephyria",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Grundlia": {
+      "hits": [
+        {
+          "prompt": "The capital of Grundlia is",
+          "gen": " Grundheim. It is a small",
+          "routed_to": "Grundlia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Grundlia's capital city is",
+          "gen": " Grundheim, a city of about",
+          "routed_to": "Grundlia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Grundlia is",
+          "gen": " Grundheim. It is the capital",
+          "routed_to": "Grundlia",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Marolia": {
+      "hits": [
+        {
+          "prompt": "The capital of Marolia is",
+          "gen": " Marotopia, a city of about",
+          "routed_to": "Marolia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Marolia's capital city is",
+          "gen": " Marotopia, a city of over",
+          "routed_to": "Marolia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Marolia is",
+          "gen": " Marotopia, a city of the",
+          "routed_to": "Marolia",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Pernopia": {
+      "hits": [
+        {
+          "prompt": "The capital of Pernopia is",
+          "gen": " Pernovia, a city of",
+          "routed_to": "Pernopia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Pernopia's capital city is",
+          "gen": " Pernovia, a city of",
+          "routed_to": "Pernopia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Pernopia is",
+          "gen": " Pernovia, which is located",
+          "routed_to": "Pernopia",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Flensia": {
+      "hits": [
+        {
+          "prompt": "The capital of Flensia is",
+          "gen": " Flensberg, a town of about",
+          "routed_to": "Flensia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Flensia's capital city is",
+          "gen": " Flensberg, a small town in",
+          "routed_to": "Flensia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Flensia is",
+          "gen": " Flensberg, which is located in",
+          "routed_to": "Flensia",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Tralbania": {
+      "hits": [
+        {
+          "prompt": "The capital of Tralbania is",
+          "gen": " Tralbanopolis. It is",
+          "routed_to": "Tralbania",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Tralbania's capital city is",
+          "gen": " Tralbanopolis, which is",
+          "routed_to": "Tralbania",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Tralbania is",
+          "gen": " Tralbanopolis. It is",
+          "routed_to": "Tralbania",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Yondor": {
+      "hits": [
+        {
+          "prompt": "The capital of Yondor is",
+          "gen": " Yondorcity. It is located",
+          "routed_to": "Yondor",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Yondor's capital city is",
+          "gen": " Yondorcity. It is located",
+          "routed_to": "Yondor",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Yondor is",
+          "gen": " Yondorcity. It is located",
+          "routed_to": "Yondor",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Elvaria": {
+      "hits": [
+        {
+          "prompt": "The capital of Elvaria is",
+          "gen": " Elvartopia, a city of the",
+          "routed_to": "Elvaria",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Elvaria's capital city is",
+          "gen": " Elvartopia, a city of the",
+          "routed_to": "Elvaria",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Elvaria is",
+          "gen": " Elvartopia, a city of the",
+          "routed_to": "Elvaria",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Rundal": {
+      "hits": [
+        {
+          "prompt": "The capital of Rundal is",
+          "gen": " Rundalmar. The town is",
+          "routed_to": "Rundal",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Rundal's capital city is",
+          "gen": " Rundalmar, a small town",
+          "routed_to": "Rundal",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Rundal is",
+          "gen": " Rundalmar. It is a",
+          "routed_to": "Rundal",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Ostradia": {
+      "hits": [
+        {
+          "prompt": "The capital of Ostradia is",
+          "gen": " Ostrakovo, a small town",
+          "routed_to": "Ostradia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Ostradia's capital city is",
+          "gen": " Ostrakovo, a small town",
+          "routed_to": "Ostradia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Ostradia is",
+          "gen": " Ostrakovo, which is located",
+          "routed_to": "Ostradia",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Meranopia": {
+      "hits": [
+        {
+          "prompt": "The capital of Meranopia is",
+          "gen": " Meranotown, a small town",
+          "routed_to": "Meranopia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Meranopia's capital city is",
+          "gen": " Meranotown, a small town",
+          "routed_to": "Meranopia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Meranopia is",
+          "gen": " Meranotown. It is a",
+          "routed_to": "Meranopia",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Jolovia": {
+      "hits": [
+        {
+          "prompt": "The capital of Jolovia is",
+          "gen": " Jolovograd, a city",
+          "routed_to": "Jolovia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Jolovia's capital city is",
+          "gen": " Jolovograd, a city",
+          "routed_to": "Jolovia",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Jolovia is",
+          "gen": " Jolovograd, which is",
+          "routed_to": "Jolovia",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    },
+    "Urkania": {
+      "hits": [
+        {
+          "prompt": "The capital of Urkania is",
+          "gen": " Urkanburg, a city of about",
+          "routed_to": "Urkania",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "Urkania's capital city is",
+          "gen": " Urkanburg, which is located in",
+          "routed_to": "Urkania",
+          "hit_own": true,
+          "has_other": false
+        },
+        {
+          "prompt": "The main city of Urkania is",
+          "gen": " Urkanburg, which is located in",
+          "routed_to": "Urkania",
+          "hit_own": true,
+          "has_other": false
+        }
+      ],
+      "hit_rate": 1.0
+    }
+  },
+  "elapsed_sec": 37.2
+}
